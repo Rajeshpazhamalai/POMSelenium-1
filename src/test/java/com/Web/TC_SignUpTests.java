@@ -20,8 +20,9 @@ public class TC_SignUpTests {
 		 
 	 }
 	 @Test
-	 public void userSignUp() throws IOException {
+	 public void userSignUp() throws IOException, InterruptedException {
 		 SignUpPage signUp=new SignUpPage(driver);
+		 Thread.sleep(5000);
 		 signUp.btnCloseCookies.click();
 		 driverHelper.typeText(signUp.txtEmail, fileManager.pReader("email"));
 		 driverHelper.typeText(signUp.txtCreatePassword, fileManager.pReader("newPassword"));
@@ -39,6 +40,6 @@ public class TC_SignUpTests {
 	 }
 	 @AfterClass
 	 void closeDriver() {
-		 driver.close();
+		 //driver.close();
 	 }
 }

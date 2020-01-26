@@ -1,56 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="66805" started-at="2020-01-26T10:16:20Z" finished-at="2020-01-26T10:17:27Z">
+  <suite name="Default suite" duration-ms="73646" started-at="2020-01-26T16:32:29 IST" finished-at="2020-01-26T16:33:43 IST">
     <groups>
-      <group name="regression">
-        <method signature="TC_LoginPageTests.validateLoginError()[pri:0, instance:com.Web.TC_LoginPageTests@6a4f787b]" name="validateLoginError" class="com.Web.TC_LoginPageTests"/>
-        <method signature="TC_LoginPageTests.validateLoginFeature()[pri:0, instance:com.Web.TC_LoginPageTests@6a4f787b]" name="validateLoginFeature" class="com.Web.TC_LoginPageTests"/>
-        <method signature="TC_LoginPageTests.validateLogOut()[pri:0, instance:com.Web.TC_LoginPageTests@6a4f787b]" name="validateLogOut" class="com.Web.TC_LoginPageTests"/>
-      </group> <!-- regression -->
-      <group name="Smoke">
-        <method signature="TC_LoginPageTests.validateLoginFeature()[pri:0, instance:com.Web.TC_LoginPageTests@6a4f787b]" name="validateLoginFeature" class="com.Web.TC_LoginPageTests"/>
-        <method signature="TC_LoginPageTests.validateLogOut()[pri:0, instance:com.Web.TC_LoginPageTests@6a4f787b]" name="validateLogOut" class="com.Web.TC_LoginPageTests"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test name="Test" duration-ms="66805" started-at="2020-01-26T10:16:20Z" finished-at="2020-01-26T10:17:27Z">
+    <test name="Default test" duration-ms="73646" started-at="2020-01-26T16:32:29 IST" finished-at="2020-01-26T16:33:43 IST">
       <class name="com.Web.TC_SignUpTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Web.TC_SignUpTests@6d4b1c02]" name="setup" is-config="true" duration-ms="14661" started-at="2020-01-26T10:16:41Z" finished-at="2020-01-26T10:16:55Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Web.TC_SignUpTests@3701eaf6]" name="setup" is-config="true" duration-ms="31132" started-at="2020-01-26T16:32:29 IST" finished-at="2020-01-26T16:33:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="userSignUp()[pri:0, instance:com.Web.TC_SignUpTests@6d4b1c02]" name="userSignUp" duration-ms="29564" started-at="2020-01-26T10:16:55Z" finished-at="2020-01-26T10:17:25Z">
+        <test-method status="PASS" signature="userSignUp()[pri:0, instance:com.Web.TC_SignUpTests@3701eaf6]" name="userSignUp" duration-ms="42476" started-at="2020-01-26T16:33:00 IST" finished-at="2020-01-26T16:33:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userSignUp -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.Web.TC_SignUpTests@6d4b1c02]" name="closeDriver" is-config="true" duration-ms="2223" started-at="2020-01-26T10:17:25Z" finished-at="2020-01-26T10:17:27Z">
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.Web.TC_SignUpTests@3701eaf6]" name="closeDriver" is-config="true" duration-ms="1" started-at="2020-01-26T16:33:43 IST" finished-at="2020-01-26T16:33:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- com.Web.TC_SignUpTests -->
-      <class name="com.Web.TC_LoginPageTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Web.TC_LoginPageTests@6a4f787b]" name="setup" is-config="true" duration-ms="6207" started-at="2020-01-26T10:16:20Z" finished-at="2020-01-26T10:16:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateLoginError()[pri:0, instance:com.Web.TC_LoginPageTests@6a4f787b]" name="validateLoginError" duration-ms="3339" started-at="2020-01-26T10:16:26Z" finished-at="2020-01-26T10:16:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginError -->
-        <test-method status="PASS" signature="validateLoginFeature()[pri:0, instance:com.Web.TC_LoginPageTests@6a4f787b]" name="validateLoginFeature" duration-ms="8744" started-at="2020-01-26T10:16:30Z" depends-on-methods="com.Web.TC_LoginPageTests.validateLoginError" finished-at="2020-01-26T10:16:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginFeature -->
-        <test-method status="PASS" signature="validateLogOut()[pri:0, instance:com.Web.TC_LoginPageTests@6a4f787b]" name="validateLogOut" duration-ms="1462" started-at="2020-01-26T10:16:39Z" depends-on-methods="com.Web.TC_LoginPageTests.validateLoginFeature" finished-at="2020-01-26T10:16:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLogOut -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.Web.TC_LoginPageTests@6a4f787b]" name="closeDriver" is-config="true" duration-ms="556" started-at="2020-01-26T10:16:40Z" finished-at="2020-01-26T10:16:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- com.Web.TC_LoginPageTests -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

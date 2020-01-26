@@ -40,7 +40,7 @@ public class WebDriverObject {
 		
 		// To launch Chrome Browser
 	void launchChromeBrowser(){
-			 System.setProperty("webdriver.chrome.driver","chromedriver1.exe");
+			 System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 			 ChromeOptions options = new ChromeOptions();
 			 options.addArguments("disable-extensions");
 			 options.setExperimentalOption("useAutomationExtension", false);
