@@ -11,7 +11,8 @@ public class SignUpPage {
 WebDriver driver;
 	
 	//Constructor
-	public SignUpPage(WebDriver driver){
+	public SignUpPage(WebDriver driver)
+	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -35,6 +36,9 @@ WebDriver driver;
 	@FindBy(xpath="(//button[@data-id='ddBoxRegistrationStateProvince']/span)[2]")
 	WebElement dropDownState;
 		
+	//@FindBy(xpath="(//div[@class='btn-group bootstrap-select form-control validate-excluded-field' and @aria-labelledby='ddBoxRegistrationStateProvince-label']")
+	//WebElement dropDownState;
+	
 	@FindBy(id="CareerRegistration_City") 
 	WebElement txtCity;
 	@FindBy(id="TalentConnectionRegistration_PhoneNumber")
@@ -42,18 +46,46 @@ WebDriver driver;
 	@FindBy(id="chkJobAlert")
 	WebElement chkBoxJobAlert;
 	
+	@FindBy(xpath="(//button[@data-id='ddlPreferredCountryRegion']/span[@class='shortText dotdot'])")
+	WebElement preferredjoblocation;
+	
 	String countryPath="//span[text()='";
-	
-	
-	public void selectCountryFromOptions(String countryName) {
-		try {
+	public void selectCountryFromOptions(String countryName) 
+	{
+		try 
+		{
 			dropDownCountry.click();
 			driver.findElement(By.xpath(countryPath+countryName+"']")).click();
 			
-		}catch(Exception e) {
+		}catch(Exception e) 
+		{
 			System.out.println("Not able to select Country");
 		}
 	}
-	
-	
+	String statePath="//span[text()='";
+	public void selectStateFromOptions(String stateName) 
+	{
+		try 
+		{
+			dropDownState.click();
+			driver.findElement(By.xpath(statePath+stateName+"']")).click();
+				
+		}catch(Exception e) 
+		{
+			System.out.println("Not able to select State");
+		}
+	}	
+	String joblocationpath="//span[text()='";
+	public void selectJoblocationFromOptions(String locationName) 
+	{
+		try 
+		{
+			preferredjoblocation.click();
+			driver.findElement(By.xpath(joblocationpath+locationName+"']")).click();
+				
+		}catch(Exception e) 
+		{
+			System.out.println("Not able to select job location");
+		}
+	}
 }
