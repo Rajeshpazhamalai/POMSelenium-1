@@ -81,6 +81,7 @@ WebDriver driver;
 		try 
 		{
 			preferredjoblocation.click();
+			//driver.findElement(By.xpath("//a[@data-analytics-link-name='usa']")).click();
 			driver.findElement(By.xpath(joblocationpath+locationName+"']")).click();
 				
 		}catch(Exception e) 
